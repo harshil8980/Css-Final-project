@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description goes here">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+    <title>Document</title>
+    <!-- box icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@500;700&family=Inconsolata:wght@500&family=Lora:ital,wght@1,700&family=Marvel&family=Montserrat+Alternates:wght@400;600;900&family=MuseoModerno:ital,wght@0,300;0,600;1,200&family=Tilt+Prism&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> 
+<!-- css Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo"><iconify-icon icon="bxl:apple"></iconify-icon>Apple</a>
+        
+        <ul class="nav-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+        </ul>
+        <div class="h-main">
+            <a href="#" class="h-btn">Buy now</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </div>
+    </header>
+    <div class="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="Videos/myvi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+   
+        <div class="content">
+            <h1>Apple Series-9</h1>
+            <p>Apple Watch Series 9 features the S9 SiP, Apple’s most powerful watch chip yet, along with a new 4-core Neural Engine that can process machine learning tasks up to two times faster.
+            </p>
+            <a href="#" class="hover-button">Learn More</a>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>AppleWatch</h1>
+            <h4>Element Series</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, inventore odio! Nostrum cupiditate libero eius?</p>
+            <div class="hero-in">
+                <div class="box">
+                    <h3>Blue</h3>
+                    <h5>Element</h5>
+                    <img src="Images/img-1.jpg" alt="image-1">
+                </div>
+                <div class="box">
+                    <h3>Grey</h3>
+                    <h5>Element</h5>
+                    <img src="Images/img-2.jpg" alt="image-1">
+                </div>
+                <div class="box">
+                    <h3>Maroon</h3>
+                    <h5>Element</h5>
+                    <img src="Images/img-3.jpg" alt="image-1">
+                </div>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="Images/main.png" alt="MAINIAMGE">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="Images/face.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="Images/ins.jpg" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="Images/twit.jpg" alt="Instagram"></a>
+            </div>
+            <div class="footer-container">
+                <div class="company-info">
+                    <img src="Images/logo.jpeg" alt="Company Logo">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod fugit 
+                    velit id quo quaerat veniam possimus vero alias consequuntur, commodi nisi 
+                    deserunt cum dignissimos officia est quasi ipsam debitis.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cumque, qui repudiandae vel ex doloremque laboriosam labore delectus facere magnam, modi quod a cum ullam cupiditate dolorum dignissimos architecto et? Quaerat, ab! Aspernatur dolorem excepturi maxime recusandae neque minima! Vitae maxime dolore modi nulla molestiae velit perferendis dolor neque consequatur voluptatibus, maiores, impedit, fugit repellat? Fugit nobis quae non, porro in suscipit ducimus, corrupti itaque id minus, autem totam aliquam nisi aspernatur exercitationem debitis reprehenderit magnam?</p>
+                </div>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navList = document.querySelector('.nav-list');
+    
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

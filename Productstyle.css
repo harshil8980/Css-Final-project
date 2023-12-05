@@ -1,0 +1,132 @@
+.feature-containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%; /* Adjust the width of each container as needed */
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Background color for the container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #336699;
+    text-align: center; /* Heading color using a complementary color scheme */
+}
+
+p {
+    color: #555;
+    margin-top: 5px;
+    text-align: center; /* Text color */
+}
+
+.star-icon {
+    color: #ffd700; /* Star icon color (gold) */
+    font-size: 24px;
+    margin-left: 45px;
+}
+
+button {
+    background-color: #336699; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1f4d80; /* Darker shade on hover for a subtle effect */
+}
+.product{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: underline;
+}
+/* Media query for larger screens */
+
+@media screen and (max-width: 768px) {
+    .feature-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    i
+    {
+        z-index: -1;
+    }
+    .feature-container {
+        width: 80%; /* Adjust the width of each container as needed */
+        margin: 20px 0;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color:#fff;
+    }
+    .nav-list a
+    {
+        color: #000;
+    }
+    .nav-list.show {
+        display: flex;
+        height: 50vh;
+    }
+
+    .nav-list li {
+        padding: 10px;
+    }
+
+    .h-main {
+        margin-top: 20px;
+    }
+
+    .nav-list.show {
+        animation: slideIn 0.3s ease-out; /* Add a slide-in animation for a smoother effect */
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    /* Additional styles for the menu icon and hiding the Buy Now button */
+    #menu-icon {
+        display: initial;
+    }
+
+    .h-main .h-btn {
+        display: none;
+    }
+}
+
+
+

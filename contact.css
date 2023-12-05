@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    color: #333;
+}
+
+.form-container,
+.map-container {
+    flex: 1;
+    margin: 100px;
+    height: 50vh;
+}
+
+form {
+    max-width: 400px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+.image-section {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.image-section img {
+    width:100%;
+    height: auto;
+    display: block;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /* Dark overlay with 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Text color */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Images/con.jpg);
+    background-size: cover;
+}
+
+.overlay h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .image-section
+    {
+        z-index: -1;
+    }
+    .form-container,
+    .map-container {
+        margin: 20px;
+    }
+
+    .map-container,
+    form {
+        width: 100%;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color:#fff;
+    }
+    .nav-list a
+    {
+        color: #000;
+    }
+    .nav-list.show {
+        display: flex;
+        height: 50vh;
+    }
+
+    .nav-list li {
+        padding: 10px;
+    }
+
+    .h-main {
+        margin-top: 20px;
+    }
+
+    .nav-list.show {
+        animation: slideIn 0.3s ease-out; /* Add a slide-in animation for a smoother effect */
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    /* Additional styles for the menu icon and hiding the Buy Now button */
+    #menu-icon {
+        display: initial;
+    }
+
+    .h-main .h-btn {
+        display: none;
+    }
+}

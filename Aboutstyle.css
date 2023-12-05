@@ -1,0 +1,171 @@
+
+.main-About {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #ffffff; /* Background color for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    padding: 80px;
+    font-family: 'Merriweather', serif;
+}
+
+.content-about{
+    flex: 1;
+    padding: 20px;
+    color: #333; /* Text color for the left side */
+    
+}
+p
+{
+    font-family: 'MuseoModerno', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #333;
+}
+h2 {
+    color: #336699; /* Heading color using a monochromatic scheme */
+    font-family: 'Merriweather', serif;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add a border-radius for rounded corners */
+}
+
+.buttonho {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #336699; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none;
+    border-radius: 4px; /* Optional: Add a border-radius for rounded corners */
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Merriweather', serif; 
+}
+
+.buttonho:hover {
+    background-color: #1f4d80; /* Darker shade on hover for a subtle effect */
+}
+.founders-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #f0f0f0; /* Background color for the section */
+    padding: 20px;
+}
+
+.founder {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Background color for each founder's block */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    width: 30%;
+}
+.founders {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Optional: Add a border-radius for rounded images */
+}
+
+h3 {
+    color: #555; /* Heading color using a complementary color scheme */
+}
+
+p {
+    color: #555; /* Text color */
+}
+.Section1
+{
+    color: #555;
+    text-align: center;
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+    .main-About {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .main-About .content-about
+    {
+        order: 2;
+    }
+    .content-about,
+    .image-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 0; /* Remove border-radius for images on smaller screens */
+    }
+
+    .founders-section {
+        flex-direction: column;
+    }
+
+    .founder {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color:#fff;
+    }
+    .nav-list a
+    {
+        color: #000;
+    }
+    .nav-list.show {
+        display: flex;
+        height: 50vh;
+    }
+
+    .nav-list li {
+        padding: 10px;
+    }
+
+    .h-main {
+        margin-top: 20px;
+    }
+
+    .nav-list.show {
+        animation: slideIn 0.3s ease-out; /* Add a slide-in animation for a smoother effect */
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    /* Additional styles for the menu icon and hiding the Buy Now button */
+    #menu-icon {
+        display: initial;
+    }
+
+    .h-main .h-btn {
+        display: none;
+    }
+}
