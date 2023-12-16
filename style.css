@@ -7,6 +7,9 @@
     text-decoration: none;
     list-style: none;
 }
+/*here the root is used to display variables this is not covered in this code but as per your 
+instruction that add your own knowledge this idea is taken from the google search to make it
+more esiar*/
 :root
 {
     --text-color:#000000;
