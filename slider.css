@@ -1,8 +1,6 @@
-
 i {
 	position: relative;
 	display: block;
-
 	height: 50vh;
 	overflow: hidden;
 	border-radius: 5px;
@@ -31,7 +29,7 @@ i:after {
 	right: 1rem;
 }
 
-/* I haven't found a way for IE and Edge to let me style inputs that way */
+/* This is the styling of input  */
 input {
 	appearance: none;
 	-ms-appearance: none;
@@ -102,7 +100,7 @@ input:checked {
 input:checked + input:before {
 	left: -3rem;
 }
-
+/* making above field to display none */
 input:checked + input ~ input:before {
 	display: none;
 }
